@@ -1,13 +1,95 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  height: 640px;
+  width: 480px;
+  border: 2px solid black;
+  position: relative;
+}
+header{
+  width: 100%;
+  padding: 16px;
+  background-color: rgb(0, 195, 255);
+}
+nav.nav{
+  background-color: rgb(61, 61, 61);
+}
+.nav form{
+  display: flex;
+  align-items: center;
+}
+.nav input{
+  padding: 8px;
+  margin: 8px;
+  width: 50%;
+}
+nav.nav ul{
+  list-style: none;
+  display: flex;
+  width: 50%;
+}
+.nav ul li{
+  margin: 8px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.nav ul li a{
+  color: white;
+}
+footer{
+  width: 476px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(85, 85, 85);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+}
+.home a{
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.home p{
+  margin-left: 8px;
+}
+.home a h2{
+  margin-left: 8px;
+}
+.home a p{
+  margin: 0 8px;
+}
+.post{
+  border: 1px solid black;
+  margin: 2px;
+}
+.home .post:hover{
+  background-color: antiquewhite;
+}
+.postPage .post{
+  padding: 8px;
+}
+.postPage .post p{
+  margin: 6px 0;
+}
+.postPage .post button{
+  padding: 4px 8px;
+  background-color: rgb(140, 0, 0);
+  color: white;
+  border: none;
+}
+.postPage .post button:hover{
+  background-color: red;
 }
